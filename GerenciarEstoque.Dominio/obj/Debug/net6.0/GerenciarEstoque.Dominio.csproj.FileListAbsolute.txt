@@ -1,0 +1,12 @@
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\bin\Debug\net6.0\GerenciarEstoque.Dominio.deps.json
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\bin\Debug\net6.0\GerenciarEstoque.Dominio.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\bin\Debug\net6.0\GerenciarEstoque.Dominio.pdb
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\obj\Debug\net6.0\GerenciarEstoque.Dominio.csproj.AssemblyReference.cache
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\obj\Debug\net6.0\GerenciarEstoque.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\obj\Debug\net6.0\GerenciarEstoque.Dominio.AssemblyInfoInputs.cache
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\obj\Debug\net6.0\GerenciarEstoque.Dominio.AssemblyInfo.cs
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\obj\Debug\net6.0\GerenciarEstoque.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\obj\Debug\net6.0\GerenciarEstoque.Dominio.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\obj\Debug\net6.0\refint\GerenciarEstoque.Dominio.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\obj\Debug\net6.0\GerenciarEstoque.Dominio.pdb
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\obj\Debug\net6.0\ref\GerenciarEstoque.Dominio.dll

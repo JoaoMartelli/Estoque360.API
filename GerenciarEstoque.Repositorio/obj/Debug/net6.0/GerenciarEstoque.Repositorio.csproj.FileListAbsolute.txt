@@ -1,0 +1,17 @@
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\bin\Debug\net6.0\GerenciarEstoque.Repositorio.deps.json
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\bin\Debug\net6.0\GerenciarEstoque.Repositorio.runtimeconfig.json
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\bin\Debug\net6.0\GerenciarEstoque.Repositorio.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\bin\Debug\net6.0\GerenciarEstoque.Repositorio.pdb
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\bin\Debug\net6.0\GerenciarEstoque.Dominio.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\bin\Debug\net6.0\GerenciarEstoque.Dominio.pdb
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\obj\Debug\net6.0\GerenciarEstoque.Repositorio.csproj.AssemblyReference.cache
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\obj\Debug\net6.0\GerenciarEstoque.Repositorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\obj\Debug\net6.0\GerenciarEstoque.Repositorio.AssemblyInfoInputs.cache
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\obj\Debug\net6.0\GerenciarEstoque.Repositorio.AssemblyInfo.cs
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\obj\Debug\net6.0\GerenciarEstoque.Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\obj\Debug\net6.0\GerenciarEstoque.Repositorio.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\obj\Debug\net6.0\refint\GerenciarEstoque.Repositorio.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\obj\Debug\net6.0\GerenciarEstoque.Repositorio.pdb
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\obj\Debug\net6.0\GerenciarEstoque.Repositorio.genruntimeconfig.cache
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\obj\Debug\net6.0\ref\GerenciarEstoque.Repositorio.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Repositorio\obj\Debug\net6.0\Gerencia.F976A577.Up2Date
