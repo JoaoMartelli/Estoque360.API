@@ -50,6 +50,11 @@ public class ProdutoAplicacao : IProdutoAplicacao
         return listaProdutos;
     }
 
+    public async Task<List<Produto>> ObterProdutosPorUsuarioId(int usuarioId)
+    {
+        return await _produtoRepositorio.ObterProdutosPorUsuarioId(usuarioId);
+    }
+
     public async Task Remover(int id)
     {
         var produto = await _produtoRepositorio.ObterPorId(id);

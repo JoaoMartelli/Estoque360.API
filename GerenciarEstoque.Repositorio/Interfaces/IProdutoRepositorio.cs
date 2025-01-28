@@ -8,4 +8,5 @@ public interface IProdutoRepositorio
     Task<Produto> ObterPorId(int id);
     Task<List<Produto>> Listar(int id);
     Task<Produto> ObterPorNome(string nome);
+    Task<List<Produto>> ObterProdutosPorUsuarioId(int usuarioId);
 }

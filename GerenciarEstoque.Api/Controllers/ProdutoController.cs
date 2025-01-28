@@ -90,4 +90,28 @@ public class ProdutoController : ControllerBase
             return BadRequest(ex.Message);
         }
     }
+
+    [HttpGet]
+    [Route("ObterPorUsuarioId/{usuarioId}")]
+    public async Task<IActionResult> Listar([FromRoute] int usuarioId)
+    {
+        try
+        {
+            var listaProdutos = await _produtoAplicacao.ObterProdutosPorUsuarioId(usuarioId);
+
+            List<ListarProdutosResponse> listaFinal = listaProdutos.Select(x => new ListarProdutosResponse()
+            {
+                Id = x.Id,
+                Nome = x.Nome,
+                Quantidade = x.Quantidade,
+                Preco = x.Preco
+            }).ToList();
+
+            return Ok(listaFinal);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
 }

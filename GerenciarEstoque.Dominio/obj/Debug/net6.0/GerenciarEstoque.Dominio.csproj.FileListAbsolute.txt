@@ -10,3 +10,4 @@ C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dom
 C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\obj\Debug\net6.0\refint\GerenciarEstoque.Dominio.dll
 C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\obj\Debug\net6.0\GerenciarEstoque.Dominio.pdb
 C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\obj\Debug\net6.0\ref\GerenciarEstoque.Dominio.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\obj\Debug\net6.0\GerenciarEstoque.Dominio.sourcelink.json

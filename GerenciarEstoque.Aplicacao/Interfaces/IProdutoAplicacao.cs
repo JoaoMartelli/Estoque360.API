@@ -8,4 +8,5 @@ public interface IProdutoAplicacao
     Task Atualizar(int produtoId, string nome, decimal preco, int quantidade);
     Task Remover(int id);
     Task<List<Produto>> Listar(int id, bool ativo);
+    Task<List<Produto>> ObterProdutosPorUsuarioId(int usuarioId);
 }

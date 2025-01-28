@@ -41,4 +41,15 @@ public class ProdutoRepositorio : BaseRepositorio, IProdutoRepositorio
         _contexto.Produtos.Add(produto);
         await _contexto.SaveChangesAsync();
     }
+
+    public async Task<List<Produto>> ObterProdutosPorUsuarioId(int usuarioId)
+    {
+        var produtosAtivos = await _contexto.Categorias
+            .Where(c => c.UsuarioId == usuarioId)
+            .SelectMany(c => c.Produtos.Where(p => p.Ativo == true))
+            .ToListAsync();
+
+        return produtosAtivos;
+    }
+
 }
