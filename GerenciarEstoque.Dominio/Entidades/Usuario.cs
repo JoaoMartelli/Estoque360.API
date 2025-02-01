@@ -24,6 +24,7 @@ public class Usuario
     public string Nome
     {
         get { return _nome; }
+        set { _nome = value; }
     }
 
     public string Email
@@ -54,7 +55,7 @@ public class Usuario
         get { return _categorias; }
         set { _categorias = value; }
     }
-    
+
     #endregion
 
     #region Construtores
@@ -78,7 +79,7 @@ public class Usuario
 
     #region Métodos
 
-        public void AlterarSenha(string senha)
+    public void AlterarSenha(string senha)
     {
         string senhaHash = BCrypt.Net.BCrypt.HashPassword(senha);
         _senha = senhaHash;
@@ -90,4 +91,4 @@ public class Usuario
     }
 
     #endregion
-}   
+}

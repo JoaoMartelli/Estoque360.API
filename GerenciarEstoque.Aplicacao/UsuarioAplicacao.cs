@@ -20,7 +20,8 @@ public class UsuarioAplicacao : IUsuarioAplicacao
             throw new Exception("Senha do usuário não pode ser vazia.");
         }
 
-        if(usuarioAtualizar.VerificarSenha(senhaAntiga)){
+        if (usuarioAtualizar.VerificarSenha(senhaAntiga))
+        {
             throw new Exception("Senha antiga inválida.");
         }
 

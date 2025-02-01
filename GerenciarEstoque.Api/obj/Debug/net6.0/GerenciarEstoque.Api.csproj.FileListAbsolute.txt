@@ -72,3 +72,10 @@ C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Api
 C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Api\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Api\obj\Debug\net6.0\Gerencia.C52D70B3.Up2Date
 C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Api\obj\Debug\net6.0\GerenciarEstoque.Api.sourcelink.json
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Api\bin\Debug\net6.0\Google.Apis.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Api\bin\Debug\net6.0\Google.Apis.Auth.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Api\bin\Debug\net6.0\Google.Apis.Core.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Api\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Api\bin\Debug\net6.0\System.Management.dll
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Management.dll

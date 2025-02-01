@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GerenciarEstoque.Repositorio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3951212533b0f85dc490f4cdab4337f948d3f68")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e401edffb09ff6f08c278e348a89dbf8b79f9d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("GerenciarEstoque.Repositorio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GerenciarEstoque.Repositorio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
