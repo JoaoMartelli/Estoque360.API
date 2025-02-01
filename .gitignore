@@ -1,0 +1,42 @@
+# Binário e diretórios de build
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+*.log
+
+# Configuração do usuário
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Arquivos do NuGet
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+.nuget/
+
+# Logs, cache e temporários
+logs/
+*.log
+*.cache
+*.tmp
+*.temp
+*.bak
+
+# Configurações do sistema operacional
+Thumbs.db
+.DS_Store
+
+# Credenciais e configurações locais
+secrets.json
+appsettings.*.json
+appsettings.local.json
+
+# Docker
+docker-compose.override.yml
