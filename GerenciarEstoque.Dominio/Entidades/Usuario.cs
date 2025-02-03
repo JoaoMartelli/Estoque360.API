@@ -7,10 +7,11 @@ public class Usuario
     private int _id;
     private string _nome;
     private string _email;
-    private DateOnly _dataNascimento;
+    private DateTime? _dataNascimento;
     private string _senha;
     private bool _ativo;
     private List<Categoria> _categorias;
+    private byte[] _fotoPerfil;
 
     #endregion
 
@@ -33,7 +34,7 @@ public class Usuario
         set { _email = value; }
     }
 
-    public DateOnly DataNascimento
+    public DateTime? DataNascimento
     {
         get { return _dataNascimento; }
         set { _dataNascimento = value; }
@@ -56,6 +57,12 @@ public class Usuario
         set { _categorias = value; }
     }
 
+    public byte[] FotoPerfil
+    {
+        get { return _fotoPerfil; }
+        set { _fotoPerfil = value; }
+    }
+
     #endregion
 
     #region Construtores
@@ -65,7 +72,7 @@ public class Usuario
         _categorias = new List<Categoria>();
     }
 
-    public Usuario(string nome, string email, DateOnly data, string senha)
+    public Usuario(string nome, string email, DateTime data, string senha)
     {
         _nome = nome;
         _email = email;

@@ -103,7 +103,7 @@ namespace GerenciarEstoque.Repositorio.Migrations
                         .HasColumnType("bit")
                         .HasColumnName("Ativo");
 
-                    b.Property<DateTime>("DataNascimento")
+                    b.Property<DateTime?>("DataNascimento")
                         .HasColumnType("date")
                         .HasColumnName("DataNascimento");
 
@@ -113,6 +113,10 @@ namespace GerenciarEstoque.Repositorio.Migrations
                         .HasColumnType("nvarchar(130)")
                         .HasColumnName("Email");
 
+                    b.Property<byte[]>("FotoPerfil")
+                        .HasColumnType("VARBINARY(MAX)")
+                        .HasColumnName("FotoPerfil");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(80)
@@ -120,7 +124,6 @@ namespace GerenciarEstoque.Repositorio.Migrations
                         .HasColumnName("Nome");
 
                     b.Property<string>("Senha")
-                        .IsRequired()
                         .HasMaxLength(64)
                         .HasColumnType("nvarchar(64)")
                         .HasColumnName("Senha");

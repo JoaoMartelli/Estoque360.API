@@ -17,9 +17,10 @@ namespace GerenciarEstoque.Repositorio.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(130)", maxLength: 130, nullable: false),
-                    DataNascimento = table.Column<DateTime>(type: "date", nullable: false),
-                    Senha = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: false),
-                    Ativo = table.Column<bool>(type: "bit", nullable: false)
+                    DataNascimento = table.Column<DateTime>(type: "date", nullable: true),
+                    Senha = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: true),
+                    Ativo = table.Column<bool>(type: "bit", nullable: false),
+                    FotoPerfil = table.Column<byte[]>(type: "VARBINARY(MAX)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -33,7 +34,6 @@ namespace GerenciarEstoque.Repositorio.Migrations
                     CategoriaID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
-                    Cor = table.Column<string>(type: "nvarchar(7)", maxLength: 7, nullable: false),
                     Ativo = table.Column<bool>(type: "bit", nullable: false),
                     UsuarioID = table.Column<int>(type: "int", nullable: false)
                 },

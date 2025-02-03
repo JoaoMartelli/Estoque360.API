@@ -58,11 +58,6 @@ public class CategoriaAplicacao : ICategoriaAplicacao
 
         var novaLista = lista.Where(x => x.Ativo == ativo).ToList();
 
-        if (novaLista.Count == 0)
-        {
-            throw new Exception("Nenhuma categoria encontrada.");
-        }
-
         return novaLista;
     }
 

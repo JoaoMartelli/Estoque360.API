@@ -23,7 +23,7 @@ public class UsuarioController : ControllerBase
     {
         try
         {
-            Usuario usuario = new Usuario(usuarioCriarRequest.Nome, usuarioCriarRequest.Email, DateOnly.FromDateTime(usuarioCriarRequest.DataNascimento), usuarioCriarRequest.Senha);
+            Usuario usuario = new Usuario(usuarioCriarRequest.Nome, usuarioCriarRequest.Email, usuarioCriarRequest.DataNascimento, usuarioCriarRequest.Senha);
 
             await _usuarioAplicacao.Criar(usuario);
 
@@ -98,6 +98,86 @@ public class UsuarioController : ControllerBase
             usuario.DataNascimento = usuarioTeste.DataNascimento;
 
             return Ok(usuario);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpPut]
+    [Route("AtualizarInformacoes")]
+    public async Task<IActionResult> AtualizarInformacoes([FromBody] UsuarioAtualizarRequest usuarioRequest)
+    {
+        try
+        {
+            await _usuarioAplicacao.AtualizarInformacoes(usuarioRequest.UsuarioId, usuarioRequest.Nome, usuarioRequest.DataNascimento);
+
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpDelete]
+    [Route("RemoverFoto/{id}")]
+    public async Task<IActionResult> RemoverFoto([FromRoute] int id)
+    {
+        try
+        {
+            await _usuarioAplicacao.RemoverFoto(id);
+
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpPut]
+    [Route("AtualizarFoto/{usuarioId}")]
+    public async Task<IActionResult> AtualizarFoto([FromRoute] int usuarioId, [FromForm] IFormFile fotoPerfil)
+    {
+        try
+        {
+            if (fotoPerfil == null || fotoPerfil.Length == 0)
+            {
+                throw new Exception("Nenhuma foto foi enviada.");
+            }
+
+            using (var memoryStream = new MemoryStream())
+            {
+                await fotoPerfil.CopyToAsync(memoryStream);
+                byte[] fotoBytes = memoryStream.ToArray();
+
+                await _usuarioAplicacao.AtualizarFoto(usuarioId, fotoBytes);
+            }
+
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpGet]
+    [Route("ObterFotoPerfil/{id}")]
+    public async Task<IActionResult> ObterFotoPerfil([FromRoute] int id)
+    {
+        try
+        {
+            var usuario = await _usuarioAplicacao.ObterUsuario(id);
+
+            if (usuario.FotoPerfil == null)
+            {
+                return Ok(null);
+            }
+
+            return File(usuario.FotoPerfil, "image/jpeg");
         }
         catch (Exception ex)
         {

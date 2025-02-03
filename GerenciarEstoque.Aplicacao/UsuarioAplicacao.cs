@@ -15,12 +15,12 @@ public class UsuarioAplicacao : IUsuarioAplicacao
     {
         var usuarioAtualizar = await _usuarioRepositorio.ObterPorId(id);
 
-        if (string.IsNullOrEmpty(senhaNova))
+        if (string.IsNullOrWhiteSpace(senhaNova))
         {
             throw new Exception("Senha do usuário não pode ser vazia.");
         }
 
-        if (usuarioAtualizar.VerificarSenha(senhaAntiga))
+        if (!usuarioAtualizar.VerificarSenha(senhaAntiga))
         {
             throw new Exception("Senha antiga inválida.");
         }
@@ -30,6 +30,59 @@ public class UsuarioAplicacao : IUsuarioAplicacao
         await _usuarioRepositorio.Atualizar(usuarioAtualizar);
     }
 
+    public async Task AtualizarInformacoes(int id, string nome, DateTime? dataNascimento)
+    {
+        var usuario = await _usuarioRepositorio.ObterPorId(id);
+
+        if (usuario == null)
+        {
+            throw new Exception("Usuário não encontrado.");
+        }
+
+        if (string.IsNullOrWhiteSpace(nome))
+        {
+            throw new Exception("Nome não pode ser vazio.");
+        }
+
+        if (DateTime.Now.AddYears(-18) > usuario.DataNascimento)
+        {
+            throw new Exception("Usuário deve ter pelo menos 18 anos.");
+        }
+
+        usuario.Nome = nome;
+        usuario.DataNascimento = dataNascimento;
+
+        await _usuarioRepositorio.Atualizar(usuario);
+    }
+
+    public async Task RemoverFoto(int usuarioId)
+    {
+        var usuario = await _usuarioRepositorio.ObterPorId(usuarioId);
+
+        if (usuario == null)
+        {
+            throw new Exception("Usuário não encontrado.");
+        }
+
+        usuario.FotoPerfil = null;
+
+        await _usuarioRepositorio.Atualizar(usuario);
+    }
+
+    public async Task AtualizarFoto(int usuarioId, byte[] novaFoto)
+    {
+        var usuario = await _usuarioRepositorio.ObterPorId(usuarioId);
+
+        if (usuario == null)
+        {
+            throw new Exception("Usuário não encontrado.");
+        }
+
+        usuario.FotoPerfil = novaFoto;
+
+        await _usuarioRepositorio.Atualizar(usuario);
+    }
+
     public async Task Criar(Usuario usuario)
     {
         if (usuario == null)
@@ -37,12 +90,12 @@ public class UsuarioAplicacao : IUsuarioAplicacao
             throw new Exception("Usuario não pode ser vazio.");
         }
 
-        if (string.IsNullOrEmpty(usuario.Nome))
+        if (string.IsNullOrWhiteSpace(usuario.Nome))
         {
             throw new Exception("Nome do usuário não pode ser vazio.");
         }
 
-        if (string.IsNullOrEmpty(usuario.Senha))
+        if (string.IsNullOrWhiteSpace(usuario.Senha))
         {
             throw new Exception("Senha do usuário não pode ser vazia.");
         }
@@ -52,7 +105,7 @@ public class UsuarioAplicacao : IUsuarioAplicacao
             throw new Exception("Usuário já existe.");
         }
 
-        if (DateOnly.FromDateTime(DateTime.Now).AddYears(-18) < usuario.DataNascimento)
+        if (DateTime.Now.AddYears(-18) > usuario.DataNascimento)
         {
             throw new Exception("Usuário deve ter pelo menos 18 anos.");
         }
@@ -85,12 +138,12 @@ public class UsuarioAplicacao : IUsuarioAplicacao
 
         if (usuario == null)
         {
-            throw new Exception("Usuario não encontrado");
+            throw new Exception("Email ou senha inválido!");
         }
 
         if (!usuario.VerificarSenha(senha))
         {
-            throw new Exception("Senha incorreta");
+            throw new Exception("Email ou senha inválido!");
         }
 
         return usuario.Id;

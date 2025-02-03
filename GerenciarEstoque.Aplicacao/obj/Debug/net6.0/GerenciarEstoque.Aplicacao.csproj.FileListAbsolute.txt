@@ -10,9 +10,9 @@ C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Apl
 C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Aplicacao\obj\Debug\net6.0\GerenciarEstoque.Aplicacao.AssemblyInfoInputs.cache
 C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Aplicacao\obj\Debug\net6.0\GerenciarEstoque.Aplicacao.AssemblyInfo.cs
 C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Aplicacao\obj\Debug\net6.0\GerenciarEstoque.Aplicacao.csproj.CoreCompileInputs.cache
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Aplicacao\obj\Debug\net6.0\GerenciarEstoque.Aplicacao.sourcelink.json
+C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Aplicacao\obj\Debug\net6.0\Gerencia.EB2E339D.Up2Date
 C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Aplicacao\obj\Debug\net6.0\GerenciarEstoque.Aplicacao.dll
 C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Aplicacao\obj\Debug\net6.0\refint\GerenciarEstoque.Aplicacao.dll
 C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Aplicacao\obj\Debug\net6.0\GerenciarEstoque.Aplicacao.pdb
 C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Aplicacao\obj\Debug\net6.0\ref\GerenciarEstoque.Aplicacao.dll
-C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Aplicacao\obj\Debug\net6.0\Gerencia.EB2E339D.Up2Date
-C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Aplicacao\obj\Debug\net6.0\GerenciarEstoque.Aplicacao.sourcelink.json

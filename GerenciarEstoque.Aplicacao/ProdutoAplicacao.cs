@@ -41,11 +41,6 @@ public class ProdutoAplicacao : IProdutoAplicacao
         var lista = await _produtoRepositorio.Listar(id);
 
         var listaProdutos = lista.Where(x => x.Ativo == ativo).ToList();
-        
-        if(listaProdutos.Count == 0)
-        {
-            throw new Exception("Nenhum produto foi encontrado para a categoria.");
-        }
 
         return listaProdutos;
     }
