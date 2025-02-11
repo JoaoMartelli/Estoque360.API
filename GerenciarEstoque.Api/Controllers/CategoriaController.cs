@@ -88,4 +88,20 @@ public class CategoriaController : ControllerBase
             return BadRequest(ex.Message);  
         }
     }
+
+    [HttpGet]
+    [Route("ObterProdutosPorCategoriaDoUsuario/{usuarioId}")]
+    public async Task<IActionResult> Atualizar([FromRoute] int usuarioId)
+    {
+        try
+        {
+            var lista = await _categoriaAplicacao.ProdutosPorCategoriaDoUsuario(usuarioId);
+
+            return Ok(lista);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);  
+        }
+    }
 }

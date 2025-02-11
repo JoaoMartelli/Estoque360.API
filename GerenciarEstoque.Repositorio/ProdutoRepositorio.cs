@@ -48,7 +48,6 @@ public class ProdutoRepositorio : BaseRepositorio, IProdutoRepositorio
             .Where(c => c.UsuarioId == usuarioId)
             .SelectMany(c => c.Produtos.Where(p => p.Ativo == true))
             .ToListAsync();
-
         return produtosAtivos;
     }
 

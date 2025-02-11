@@ -1,3 +1,4 @@
+using Dapper;
 using GerenciarEstoque.Dominio.Entidades;
 using Microsoft.EntityFrameworkCore;
 
@@ -40,5 +41,24 @@ public class CategoriaRepositorio : BaseRepositorio, ICategoriaRepositorio
     {
         _contexto.Categorias.Add(categoria);
         await _contexto.SaveChangesAsync();
+    }
+
+    public async Task<IEnumerable<ProdutosPorCategoriaDoUsuario>> ProdutosPorCategoriaDoUsuario(int usuarioId)
+    {
+        var parameters = new
+        {
+            UsuarioId = usuarioId
+        };
+
+        using (var connection = _contexto.CriarConexao())
+        {
+            var produtosPorCategoria = await connection.QueryAsync<ProdutosPorCategoriaDoUsuario>(
+                "ObterProdutosPorCategoria",
+                parameters,
+                commandType: System.Data.CommandType.StoredProcedure
+            );
+
+            return produtosPorCategoria;
+        }
     }
 }

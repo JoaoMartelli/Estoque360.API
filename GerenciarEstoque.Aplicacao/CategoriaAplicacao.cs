@@ -74,4 +74,11 @@ public class CategoriaAplicacao : ICategoriaAplicacao
 
         await _categoriaRepositorio.Atualizar(categoria);
     }
+
+    public async Task<IEnumerable<ProdutosPorCategoriaDoUsuario>> ProdutosPorCategoriaDoUsuario(int usuarioId)
+    {
+        var lista = await _categoriaRepositorio.ProdutosPorCategoriaDoUsuario(usuarioId);
+
+        return lista;
+    }
 }

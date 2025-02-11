@@ -44,7 +44,7 @@ public class UsuarioAplicacao : IUsuarioAplicacao
             throw new Exception("Nome não pode ser vazio.");
         }
 
-        if (DateTime.Now.AddYears(-18) > usuario.DataNascimento)
+        if (DateTime.Now.AddYears(-18) < dataNascimento)
         {
             throw new Exception("Usuário deve ter pelo menos 18 anos.");
         }
@@ -105,7 +105,7 @@ public class UsuarioAplicacao : IUsuarioAplicacao
             throw new Exception("Usuário já existe.");
         }
 
-        if (DateTime.Now.AddYears(-18) > usuario.DataNascimento)
+        if (DateTime.Now.AddYears(-18) < usuario.DataNascimento)
         {
             throw new Exception("Usuário deve ter pelo menos 18 anos.");
         }
@@ -147,5 +147,26 @@ public class UsuarioAplicacao : IUsuarioAplicacao
         }
 
         return usuario.Id;
+    }
+
+    public async Task<Usuario> ObterUsuarioPorEmail(string email)
+    {
+        return await _usuarioRepositorio.ObterPorEmail(email);
+    }
+
+    public async Task<int> CriarGoogle(string nome, string email)
+    {
+        var usuario = new Usuario()
+        {
+            Nome = nome,
+            Email = email,
+            Ativo = true
+        };
+
+        await _usuarioRepositorio.Salvar(usuario);
+
+        var obterUsuario = await _usuarioRepositorio.ObterPorEmail(email);
+
+        return obterUsuario.Id;
     }
 }

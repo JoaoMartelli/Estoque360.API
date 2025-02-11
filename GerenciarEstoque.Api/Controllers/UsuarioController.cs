@@ -2,6 +2,7 @@ using GerenciarEstoque.Api.Models.Usuarios.Request;
 using GerenciarEstoque.Api.Models.Usuarios.Response;
 using GerenciarEstoque.Aplicacao;
 using GerenciarEstoque.Dominio.Entidades;
+using Google.Apis.Auth;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GerenciarEstoque.Api.Controllers;
@@ -184,4 +185,48 @@ public class UsuarioController : ControllerBase
             return BadRequest(ex.Message);
         }
     }
+
+    [HttpPost]
+    [Route("LoginGoogle")]
+    public async Task<IActionResult> LoginGoogle([FromBody] GoogleLoginRequest idToken)
+    {
+        try
+        {
+            var payload = await ValidarGoogleToken(idToken.IdToken);
+            if (payload == null)
+                return Unauthorized("Token inválido");
+
+            var usuario = await _usuarioAplicacao.ObterUsuarioPorEmail(payload.Email);
+            if (usuario == null)
+            {
+                var id = await _usuarioAplicacao.CriarGoogle(payload.Name, payload.Email);
+
+                return Ok(id);
+            }
+
+            return Ok(usuario.Id);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    private async Task<GoogleJsonWebSignature.Payload?> ValidarGoogleToken(string token)
+    {
+        try
+        {
+            var settings = new GoogleJsonWebSignature.ValidationSettings
+            {
+                Audience = new List<string> { "587181083846-4ak4mskviifn6t2uc0al7dc0dt2ehjs8.apps.googleusercontent.com" }
+            };
+
+            return await GoogleJsonWebSignature.ValidateAsync(token, settings);
+        }
+        catch
+        {
+            return null;
+        }
+    }
 }
+

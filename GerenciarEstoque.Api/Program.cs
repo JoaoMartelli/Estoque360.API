@@ -1,3 +1,4 @@
+using GerenciarEstoque.Api.Models.Usuarios.Request;
 using GerenciarEstoque.Aplicacao;
 using GerenciarEstoque.Repositorio;
 using Microsoft.EntityFrameworkCore;
@@ -39,8 +40,6 @@ builder.Services.AddSwaggerGen(c =>
     // Adiciona suporte a upload de arquivos
     c.OperationFilter<FileUploadOperationFilter>();
 });
-
-
 
 var app = builder.Build();
 

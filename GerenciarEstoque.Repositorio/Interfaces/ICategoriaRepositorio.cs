@@ -8,4 +8,5 @@ public interface ICategoriaRepositorio
     Task<Categoria> ObterPorId(int id);
     Task<List<Categoria>> Listar(int id);
     Task<Categoria> ObterPorNome(string nome);
+    Task<IEnumerable<ProdutosPorCategoriaDoUsuario>> ProdutosPorCategoriaDoUsuario(int usuarioId);
 }
