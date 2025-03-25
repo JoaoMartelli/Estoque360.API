@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "99s9Hq65vlE=",
+  "dgSpecHash": "7V/YRORsVaw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jooao\\OneDrive\\Desktop\\Atividades\\GerenciarEstoque\\GerenciarEstoque.Dominio\\GerenciarEstoque.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\jooao\\Desktop\\Estoque360\\Estoque360.API\\GerenciarEstoque.Dominio\\GerenciarEstoque.Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jooao\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
   ],

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GerenciarEstoque.Dominio
-build_property.ProjectDir = C:\Users\jooao\OneDrive\Desktop\Atividades\GerenciarEstoque\GerenciarEstoque.Dominio\
+build_property.ProjectDir = C:\Users\jooao\Desktop\Estoque360\Estoque360.API\GerenciarEstoque.Dominio\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

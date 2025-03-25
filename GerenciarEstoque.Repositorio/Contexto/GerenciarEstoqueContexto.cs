@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 public class GerenciarEstoqueContexto : DbContext
 {
-    private readonly string stringConexao = "Server=JOÃO-PAULO\\SQLEXPRESS;Database=Estoque360;TrustServerCertificate=true;Trusted_Connection=True;";
+    private readonly string stringConexao = "Server=JOÃOMARTELLI\\SQLEXPRESS;Database=Estoque360;TrustServerCertificate=true;Trusted_Connection=True;";
 
     public GerenciarEstoqueContexto() : base(new DbContextOptions<GerenciarEstoqueContexto>())
     {
