@@ -218,7 +218,7 @@ public class UsuarioController : ControllerBase
         {
             var settings = new GoogleJsonWebSignature.ValidationSettings
             {
-                Audience = new List<string> { "587181083846-4ak4mskviifn6t2uc0al7dc0dt2ehjs8.apps.googleusercontent.com" }
+                Audience = new List<string> { "TokenGoogle" }
             };
 
             return await GoogleJsonWebSignature.ValidateAsync(token, settings);
